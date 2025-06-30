@@ -8,7 +8,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // 💡 Işıklandırma
-const directionalLight = new THREE.DirectionalLight(0xffffff, 0,5);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0,9);
 directionalLight.position.set(3, 0, 1);
 scene.add(directionalLight);
 
@@ -84,7 +84,7 @@ loader.load('moon-texture.jpg', function (texture) {
     function animate() {
         requestAnimationFrame(animate);
 
-        moon.rotation.y += 0.00001;
+        moon.rotation.y += 0.00015;
 
         textGroup.rotation.y += 0.004;
         textGroup2.rotation.y += 0.004; // ✅ Aynı hızda dönecek
