@@ -84,7 +84,7 @@ loader.load('moon-texture.jpg', function (texture) {
     function animate() {
         requestAnimationFrame(animate);
 
-        moon.rotation.y += 0.0001;
+        moon.rotation.y += 0.00001;
 
         textGroup.rotation.y += 0.004;
         textGroup2.rotation.y += 0.004; // ✅ Aynı hızda dönecek
